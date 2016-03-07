@@ -1,15 +1,15 @@
 {
-  "name": "shoter",
+  "name": "webshot-azure",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "nightw0rk",
+  "license": "MIT",
   "dependencies": {
     "azure-storage": "^0.8.0",
-    "phantom": "^2.0.4"
+    "phantom": "^2.0.4" 
   }
 }
