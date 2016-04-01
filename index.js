@@ -52,7 +52,7 @@ app.post('/', function(req, res) {
     res.send({ status: "OK", message: "Add to task" });
 });
 
-amqp.connect("amqp://guest:guest@192.168.99.100:32777").then(function(conn) {
+amqp.connect(process.env.RMQ || "amqp://guest:guest@192.168.99.100:32777").then(function(conn) {
     app.mqCon = conn;
     app.mqCon.createChannel().then(function(ch) {
         app.mqChannel = ch;
